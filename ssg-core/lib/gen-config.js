@@ -58,13 +58,11 @@ module.exports = function(options) {
             }]
         };
 
-        console.log(options.config);
-
         $.util.log(patternConfig);
 
         var patterns = JSON.stringify(patternConfig, null, 4);
 
-        fs.writeFile(options.config, patterns, function(err) {
+        fs.writeFile(options.configFile, patterns, function(err) {
 
             if (err) {
                 return $.util.log(
@@ -78,11 +76,9 @@ module.exports = function(options) {
 
         });
 
-        // return through2.obj();
-
     };
 
-    var blubs = gulp.src('./templates/**/_*.hbs')
+    var blubs = gulp.src(options.patterns)
         .pipe(through2.obj(buildConfig))
         .on('end', function() {
 

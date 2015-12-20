@@ -9,6 +9,8 @@ module.exports = function(options) {
 
     var patternsData = [];
 
+    var statistics = 0;
+
     var buildConfig = function(file, enc, callback) {
 
         var path = require('path');
@@ -29,8 +31,16 @@ module.exports = function(options) {
             path: patternpath
         };
 
+        // check if pattern currently exists in patterns
+        var found = patternsData.filter(function(obj) {
+            return obj.path === item.path;
+        })
+
         // add pattern to patterns
-        patternsData.push(item);
+        if (found.length === 0) {
+            patternsData.push(item);
+            statistics += 1;
+        }
 
         callback(null, file);
 
@@ -41,24 +51,22 @@ module.exports = function(options) {
         var patternConfig = {
             patterns: patternsData,
             folder: [{
-                "name": "atoms",
-                "description": "Contains all atom elements"
+                'name': 'atoms',
+                'description': 'Contains all atom elements'
             }, {
-                "name": "molecules",
-                "description": "Contains all molecule elements"
+                'name': 'molecules',
+                'description': 'Contains all molecule elements'
             }, {
-                "name": "organism",
-                "description": "Contains all organism elements"
+                'name': 'organism',
+                'description': 'Contains all organism elements'
             }, {
-                "name": "templates",
-                "description": "Contains all templates elements"
+                'name': 'templates',
+                'description': 'Contains all templates elements'
             }, {
-                "name": "pages",
-                "description": "Contains all pages elements"
+                'name': 'pages',
+                'description': 'Contains all pages elements'
             }]
         };
-
-        $.util.log(patternConfig);
 
         var patterns = JSON.stringify(patternConfig, null, 4);
 
@@ -71,19 +79,70 @@ module.exports = function(options) {
             }
 
             $.util.log(
-                $.util.colors.green("The file was saved!")
+                $.util.colors.green('The file was saved!')
             );
 
         });
 
     };
 
+    var loadCurrentConfig = function() {
+
+        $.util.log('... Loading current configuration');
+
+        var curConfigPath = options.configFile;
+
+        var exits;
+
+        try {
+
+            exists = fs.statSync(curConfigPath);
+
+        } catch (erro) {
+
+            exists = null;
+            return;
+
+        }
+
+        try {
+
+            // Loading old configuration
+            var config = fs.readFileSync(options.configFile);
+
+            // parse json config
+            configData = JSON.parse(config);
+
+            // check if configuration data exits
+            patternsData = configData !== undefined &&
+                configData.patterns !== undefined ? configData.patterns : [];
+
+            $.util.log(
+                'Found',
+                patternsData.length,
+                'pattern(s).');
+
+        } catch (err) {
+
+            $.util.log($.util.colors.red(err));
+
+        }
+
+    };
+
+    var logStatistics = function(){
+        $.util.log(
+            'Found',
+            statistics === 0 ? 'no new pattern' : $.util.colors.green(statistics) + ' new pattern'
+            );
+    }
+
     var blubs = gulp.src(options.patterns)
+        .pipe(through2.obj(loadCurrentConfig()))
         .pipe(through2.obj(buildConfig))
         .on('end', function() {
-
+            logStatistics();
             return through2.obj(writeConfigToFile());
-
         });
 
     return blubs;

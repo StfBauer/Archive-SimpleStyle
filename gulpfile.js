@@ -16,9 +16,7 @@ gulp.task('debug', function(options) {
 // task generate file index
 gulp.task('gen-config', function() {
 
-    var patternPath = config.pattern + '**/*.mustache';
-
-    console.log(patternPath);
+    var patternPath = config.pattern + '**/*.hbs';
 
     var curConfig = {
     	patterns: patternPath,

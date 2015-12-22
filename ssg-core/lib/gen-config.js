@@ -34,7 +34,7 @@ module.exports = function(options) {
         // check if pattern currently exists in patterns
         var found = patternsData.filter(function(obj) {
             return obj.path === item.path;
-        })
+        });
 
         // add pattern to patterns
         if (found.length === 0) {
@@ -120,7 +120,7 @@ module.exports = function(options) {
             $.util.log(
                 'Found',
                 patternsData.length,
-                'pattern(s).');
+                'pattern(s) in configuration.');
 
         } catch (err) {
 
@@ -135,7 +135,9 @@ module.exports = function(options) {
             'Found',
             statistics === 0 ? 'no new pattern' : $.util.colors.green(statistics) + ' new pattern'
             );
-    }
+    };
+
+    console.log(options.patterns);
 
     var blubs = gulp.src(options.patterns)
         .pipe(through2.obj(loadCurrentConfig()))

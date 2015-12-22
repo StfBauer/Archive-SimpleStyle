@@ -31,10 +31,19 @@
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
     "gulp-wrap": "^0.11.0",
+    "handlebars": "^4.0.5",
+    "merge-stream": "^1.0.0",
     "through2": "^2.0.0",
     "yargs": "^3.31.0"
+  },
+  "devDependencies": {
+    "gulp-merge": "^0.1.1",
+    "gulp-wrap": "^0.11.0",
+    "handlebars": "^4.0.5"
   }
 }

@@ -2,10 +2,13 @@ var test = 'hello world';
 
 var gulp = require('gulp'),
     watch = require('gulp-watch'),
+
     // base application configuration
-    config = require('./gulp.config'),
-    through2 = require('through2'),
+    del = require('del'),
+
     // custom plugins for simple style guide
+    helper = require('./ssg-core/lib/helper'),
+    config = require('./gulp.config'),
     ssgCoreConfig = require('./ssg-core/lib/gen-config'),
     ssgCoreCompile = require('./ssg-core/lib/precomp-pattern');
 
@@ -30,10 +33,28 @@ gulp.task('gen-config', function() {
 
 });
 
-gulp.task('precompile-pattern', ssgCoreCompile);
+gulp.task('precompile', ssgCoreCompile);
 
-gulp.task('test', function(){
-    ssgCoreCompile(patternPath);
+gulp.task('wiredep', function(){
+
+});
+
+gulp.task('clean', function(done) {
+
+    var files2delete = config.tempFiles + '*';
+
+    del(config.tempFiles).then(function() {
+        return done();
+    });
+
+});
+
+gulp.task('test', function() {
+
+    helper.logMessage('hello world', helper.logType.log);
+    helper.logMessage('hello world', helper.logType.error);
+    helper.logMessage('hello world', helper.logType.warning);
+
 });
 
 // compile handlebar patterns

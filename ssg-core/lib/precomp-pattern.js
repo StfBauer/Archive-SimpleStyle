@@ -18,6 +18,8 @@ module.exports = function() {
         handlebars: require('handlebars')
     };
 
+    console.log(config.namespaces.patterns);
+
     // partials stream
     var partials = gulp.src(config.pattern + '/**/_*.hbs')
         .pipe(plumber())
@@ -43,15 +45,15 @@ module.exports = function() {
         .pipe(wrap('Handlebars.template(<%= contents %>)'))
         // namespace
         .pipe(declare({
-            namespace: 'App.templates',
+            namespace: config.namespaces.patterns,
             noRedeclare: true
         }));
 
     // return merge
     return merge(partials, templates)
         // concat
-        .pipe(concat('pattern.js'))
+        .pipe(concat(config.namespaces.patterns + '.js'))
         // build
-        .pipe(gulp.dest('./app/_config/'));
+        .pipe(gulp.dest(config.tempFiles + 'js'));
 
 };

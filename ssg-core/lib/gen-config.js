@@ -137,8 +137,6 @@ module.exports = function(options) {
             );
     };
 
-    console.log(options.patterns);
-
     var blubs = gulp.src(options.patterns)
         .pipe(through2.obj(loadCurrentConfig()))
         .pipe(through2.obj(buildConfig))

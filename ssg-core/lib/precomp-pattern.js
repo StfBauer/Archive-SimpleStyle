@@ -54,6 +54,6 @@ module.exports = function() {
         // concat
         .pipe(concat(config.namespaces.patterns + '.js'))
         // build
-        .pipe(gulp.dest(config.tempFiles + 'js'));
+        .pipe(gulp.dest(config.tempFiles + 'scripts'));
 
 };

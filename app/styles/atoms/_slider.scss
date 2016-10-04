@@ -1,0 +1,15 @@
+.slide {
+    &show {
+        display: block;
+        overflow: hidden;
+    }
+    &-item {
+        display: inline-block;
+        float: left;
+        width: 33%;
+        background-color: $sol-blue;
+        &:nth-child(2n+1) {
+            background-color: $sol-orange;
+        }
+    }
+}

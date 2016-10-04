@@ -1,0 +1,254 @@
+{
+    "patterns": [
+        {
+            "title": "00-colors",
+            "description": "",
+            "filename": "00-colors",
+            "filepath": "atoms/00-core/00-colors.hbs"
+        },
+        {
+            "title": "01-fonts",
+            "description": "",
+            "filename": "01-fonts",
+            "filepath": "atoms/00-core/01-fonts.hbs"
+        },
+        {
+            "title": "02-headlines",
+            "description": "",
+            "filename": "02-headlines",
+            "filepath": "atoms/00-core/02-headlines.hbs"
+        },
+        {
+            "title": "03-headlines-linked",
+            "description": "",
+            "filename": "03-headlines-linked",
+            "filepath": "atoms/00-core/03-headlines-linked.hbs"
+        },
+        {
+            "title": "04-inline-styles",
+            "description": "",
+            "filename": "04-inline-styles",
+            "filepath": "atoms/00-core/04-inline-styles.hbs"
+        },
+        {
+            "title": "05-unordered-list",
+            "description": "",
+            "filename": "05-unordered-list",
+            "filepath": "atoms/00-core/05-unordered-list.hbs"
+        },
+        {
+            "title": "06-ordered-list",
+            "description": "",
+            "filename": "06-ordered-list",
+            "filepath": "atoms/00-core/06-ordered-list.hbs"
+        },
+        {
+            "title": "07-definition-list",
+            "description": "",
+            "filename": "07-definition-list",
+            "filepath": "atoms/00-core/07-definition-list.hbs"
+        },
+        {
+            "title": "08-hyperlinks",
+            "description": "",
+            "filename": "08-hyperlinks",
+            "filepath": "atoms/00-core/08-hyperlinks.hbs"
+        },
+        {
+            "title": "01-rich-text-editor-headlines",
+            "description": "",
+            "filename": "01-rich-text-editor-headlines",
+            "filepath": "atoms/01-rich-text-editor/01-rich-text-editor-headlines.hbs"
+        },
+        {
+            "title": "02-rich-text-editor-headlines-linked",
+            "description": "",
+            "filename": "02-rich-text-editor-headlines-linked",
+            "filepath": "atoms/01-rich-text-editor/02-rich-text-editor-headlines-linked.hbs"
+        },
+        {
+            "title": "03-rich-text-editor-inline-styles",
+            "description": "",
+            "filename": "03-rich-text-editor-inline-styles",
+            "filepath": "atoms/01-rich-text-editor/03-rich-text-editor-inline-styles.hbs"
+        },
+        {
+            "title": "04-rich-text-editor-default-table",
+            "description": "",
+            "filename": "04-rich-text-editor-default-table",
+            "filepath": "atoms/01-rich-text-editor/04-rich-text-editor-default-table.hbs"
+        },
+        {
+            "title": "05-rich-text-editor-paragraph",
+            "description": "",
+            "filename": "05-rich-text-editor-paragraph",
+            "filepath": "atoms/01-rich-text-editor/05-rich-text-editor-paragraph.hbs"
+        },
+        {
+            "title": "06-rich-text-editor-paragraph-lead",
+            "description": "",
+            "filename": "06-rich-text-editor-paragraph-lead",
+            "filepath": "atoms/01-rich-text-editor/06-rich-text-editor-paragraph-lead.hbs"
+        },
+        {
+            "title": "07-rich-text-editor-blockquote",
+            "description": "",
+            "filename": "07-rich-text-editor-blockquote",
+            "filepath": "atoms/01-rich-text-editor/07-rich-text-editor-blockquote.hbs"
+        },
+        {
+            "title": "01-site-logo",
+            "description": "",
+            "filename": "01-site-logo",
+            "filepath": "atoms/02-images/01-site-logo.hbs"
+        },
+        {
+            "title": "02-image-rendition-1",
+            "description": "",
+            "filename": "02-image-rendition-1",
+            "filepath": "atoms/02-images/02-image-rendition-1.hbs"
+        },
+        {
+            "title": "03-image-rendition-2",
+            "description": "",
+            "filename": "03-image-rendition-2",
+            "filepath": "atoms/02-images/03-image-rendition-2.hbs"
+        },
+        {
+            "title": "04-image-rendition-3",
+            "description": "",
+            "filename": "04-image-rendition-3",
+            "filepath": "atoms/02-images/04-image-rendition-3.hbs"
+        },
+        {
+            "title": "05-image-rendition-4",
+            "description": "",
+            "filename": "05-image-rendition-4",
+            "filepath": "atoms/02-images/05-image-rendition-4.hbs"
+        },
+        {
+            "title": "06-image-rendition-5",
+            "description": "",
+            "filename": "06-image-rendition-5",
+            "filepath": "atoms/02-images/06-image-rendition-5.hbs"
+        },
+        {
+            "title": "06-image-rendition-6",
+            "description": "",
+            "filename": "06-image-rendition-6",
+            "filepath": "atoms/02-images/06-image-rendition-6.hbs"
+        },
+        {
+            "title": "01-top-navigation-entry",
+            "description": "",
+            "filename": "01-top-navigation-entry",
+            "filepath": "atoms/03-header/01-top-navigation-entry.hbs"
+        },
+        {
+            "title": "02-top-navigation-flyout",
+            "description": "",
+            "filename": "02-top-navigation-flyout",
+            "filepath": "atoms/03-header/02-top-navigation-flyout.hbs"
+        },
+        {
+            "title": "03-quicklaunch-entry",
+            "description": "",
+            "filename": "03-quicklaunch-entry",
+            "filepath": "atoms/03-header/03-quicklaunch-entry.hbs"
+        },
+        {
+            "title": "01-html5-inputs",
+            "description": "",
+            "filename": "01-html5-inputs",
+            "filepath": "atoms/04-forms/01-html5-inputs.hbs"
+        },
+        {
+            "title": "02-ms-command-link",
+            "description": "",
+            "filename": "02-ms-command-link",
+            "filepath": "atoms/04-forms/02-ms-command-link.hbs"
+        },
+        {
+            "title": "03-ms-hero-button",
+            "description": "",
+            "filename": "03-ms-hero-button",
+            "filepath": "atoms/04-forms/03-ms-hero-button.hbs"
+        },
+        {
+            "title": "04-ms-list-forms-choice-fill-in",
+            "description": "",
+            "filename": "04-ms-list-forms-choice-fill-in",
+            "filepath": "atoms/04-forms/04-ms-list-forms-choice-fill-in.hbs"
+        },
+        {
+            "title": "05-ms-list-forms-choice",
+            "description": "",
+            "filename": "05-ms-list-forms-choice",
+            "filepath": "atoms/04-forms/05-ms-list-forms-choice.hbs"
+        },
+        {
+            "title": "06-ms-list-forms-date",
+            "description": "",
+            "filename": "06-ms-list-forms-date",
+            "filepath": "atoms/04-forms/06-ms-list-forms-date.hbs"
+        },
+        {
+            "title": "07-ms-list-forms-multi-line-text",
+            "description": "",
+            "filename": "07-ms-list-forms-multi-line-text",
+            "filepath": "atoms/04-forms/07-ms-list-forms-multi-line-text.hbs"
+        },
+        {
+            "title": "08-ms-list-forms-single-line-text",
+            "description": "",
+            "filename": "08-ms-list-forms-single-line-text",
+            "filepath": "atoms/04-forms/08-ms-list-forms-single-line-text.hbs"
+        },
+        {
+            "title": "01-menu-headline",
+            "description": "",
+            "filename": "01-menu-headline",
+            "filepath": "atoms/99-specials/01-menu-headline.hbs"
+        },
+        {
+            "title": "02-Menu-Content",
+            "description": "",
+            "filename": "02-menu-content",
+            "filepath": "atoms/99-specials/02-menu-content.hbs"
+        },
+        {
+            "title": "03-Menu-Image",
+            "description": "",
+            "filename": "03-menu-image",
+            "filepath": "atoms/99-specials/03-menu-image.hbs"
+        },
+        {
+            "title": "sample",
+            "description": "",
+            "filename": "sample",
+            "filepath": "molecules/sample.hbs"
+        }
+    ],
+    "folder": [
+        {
+            "name": "atoms",
+            "description": "Contains all atom elements"
+        },
+        {
+            "name": "molecules",
+            "description": "Contains all molecule elements"
+        },
+        {
+            "name": "organism",
+            "description": "Contains all organism elements"
+        },
+        {
+            "name": "templates",
+            "description": "Contains all templates elements"
+        },
+        {
+            "name": "pages",
+            "description": "Contains all pages elements"
+        }
+    ]
+}

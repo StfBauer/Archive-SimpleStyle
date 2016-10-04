@@ -72,4 +72,4 @@ bower_components
 .bower-tmp
 
 ### Custom App Configuration ###
-app/_*/*
+# app/_*/*

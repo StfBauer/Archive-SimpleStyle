@@ -1,3 +1,39 @@
 // bower:scss
 @import "bower_components/susy/sass/_susy.scss";
 // endbower
+@import url(https://n8design.sharepoint.com/_layouts/15/1033/styles/QCB.css);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+// @import 'molecules/figure';
+// @import 'grid.config';
+$blue: #318eb1;
+// @import 'atoms/slider';
+
+
+.menu{
+    &-image{
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &-headline{
+        color: $blue;
+        font-size: 200%;
+        border-bottom: 3px $blue solid;
+        margin-bottom: 20px;
+        padding: 0.5em 0.5em;
+        font-family: 'Lobster', sans-serif;
+    }
+    &-content{
+        padding: 0.5em 1em;
+
+    }
+}
+
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Pacifico', sans-serif;
+    color: $blue !important;
+}

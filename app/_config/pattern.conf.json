@@ -205,28 +205,106 @@
             "filepath": "atoms/04-forms/08-ms-list-forms-single-line-text.hbs"
         },
         {
-            "title": "01-menu-headline",
+            "title": "ms-clear-table",
             "description": "",
-            "filename": "01-menu-headline",
-            "filepath": "atoms/99-specials/01-menu-headline.hbs"
+            "filename": "ms-clear-table",
+            "filepath": "atoms/05-tables/ms-clear-table.hbs"
         },
         {
-            "title": "02-Menu-Content",
+            "title": "ms-default-table-0",
             "description": "",
-            "filename": "02-menu-content",
-            "filepath": "atoms/99-specials/02-menu-content.hbs"
+            "filename": "ms-default-table-0",
+            "filepath": "atoms/05-tables/ms-default-table-0.hbs"
         },
         {
-            "title": "03-Menu-Image",
+            "title": "ms-default-table-10",
             "description": "",
-            "filename": "03-menu-image",
-            "filepath": "atoms/99-specials/03-menu-image.hbs"
+            "filename": "ms-default-table-10",
+            "filepath": "atoms/05-tables/ms-default-table-10.hbs"
         },
         {
-            "title": "sample",
+            "title": "ms-default-table-4",
             "description": "",
-            "filename": "sample",
-            "filepath": "molecules/sample.hbs"
+            "filename": "ms-default-table-4",
+            "filepath": "atoms/05-tables/ms-default-table-4.hbs"
+        },
+        {
+            "title": "ms-default-table-5",
+            "description": "",
+            "filename": "ms-default-table-5",
+            "filepath": "atoms/05-tables/ms-default-table-5.hbs"
+        },
+        {
+            "title": "ms-default-table-6",
+            "description": "",
+            "filename": "ms-default-table-6",
+            "filepath": "atoms/05-tables/ms-default-table-6.hbs"
+        },
+        {
+            "title": "ms-default-table-7",
+            "description": "",
+            "filename": "ms-default-table-7",
+            "filepath": "atoms/05-tables/ms-default-table-7.hbs"
+        },
+        {
+            "title": "ms-default-table-8",
+            "description": "",
+            "filename": "ms-default-table-8",
+            "filepath": "atoms/05-tables/ms-default-table-8.hbs"
+        },
+        {
+            "title": "ms-default-table-9",
+            "description": "",
+            "filename": "ms-default-table-9",
+            "filepath": "atoms/05-tables/ms-default-table-9.hbs"
+        },
+        {
+            "title": "ms-light-band-table",
+            "description": "",
+            "filename": "ms-light-band-table",
+            "filepath": "atoms/05-tables/ms-light-band-table.hbs"
+        },
+        {
+            "title": "ms-light-line-table",
+            "description": "",
+            "filename": "ms-light-line-table",
+            "filepath": "atoms/05-tables/ms-light-line-table.hbs"
+        },
+        {
+            "title": "Card Headline",
+            "description": "",
+            "filename": "01-card-headline",
+            "filepath": "atoms/99-specials/01-card-headline.hbs"
+        },
+        {
+            "title": "Card Content",
+            "description": "",
+            "filename": "02-card-content",
+            "filepath": "atoms/99-specials/02-card-content.hbs"
+        },
+        {
+            "title": "Card rollup image",
+            "description": "",
+            "filename": "03-card-image",
+            "filepath": "atoms/99-specials/03-card-image.hbs"
+        },
+        {
+            "title": "card-alternate",
+            "description": "",
+            "filename": "card-alternate",
+            "filepath": "molecules/card-alternate.hbs"
+        },
+        {
+            "title": "card",
+            "description": "",
+            "filename": "card",
+            "filepath": "molecules/card.hbs"
+        },
+        {
+            "title": "multiple-card",
+            "description": "",
+            "filename": "multiple-card",
+            "filepath": "organism/multiple-card.hbs"
         }
     ],
     "folder": [

@@ -6,10 +6,12 @@
 // @import 'molecules/figure';
 // @import 'grid.config';
 $blue: #318eb1;
-// @import 'atoms/slider';
 
-
-.menu{
+.card{
+    display: inline-block;
+    &:hover{
+        background-color: rgba($blue, 0.1);
+    }
     &-image{
         img{
             max-width: 100%;
@@ -26,14 +28,20 @@ $blue: #318eb1;
     }
     &-content{
         padding: 0.5em 1em;
-
     }
 }
 
-h1,
-h2,
-h3,
-h4{
-    font-family: 'Pacifico', sans-serif;
-    color: $blue !important;
+.card-container{
+    .card{
+        width: 30%;
+        margin: 2% 1.5%;
+    }
 }
+
+// h1,
+// h2,
+// h3,
+// h4{
+//     font-family: 'Pacifico', sans-serif;
+//     color: $blue !important;
+// }

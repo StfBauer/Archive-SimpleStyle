@@ -4,6 +4,8 @@
 This project aims to create a consisten Style Guide for SharePoint and Office 365 Development. It should sever as a documentation and development platform for every new SharePoint branding project.
 In future this aims to provide a Style Guide for the new SharePoint Framework too.
 
+There is also a [Yeoman generator](https://github.com/StfBauer/generator-simplestyle) now available.
+
 ## History
 
 *Current Version:*   0.1

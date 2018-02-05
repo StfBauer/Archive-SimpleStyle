@@ -1,4 +1,8 @@
+# This project is not maintained anymore - please checkout and star [SimpleStyle Yeoman Generator](https://github.com/StfBauer/generator-simplestyle) project - thank you
+
+
 # Simple Style Guide for SharePoint and Office 365 Development
+
 ![alt text][logo]
 
 This project aims to create a consisten Style Guide for SharePoint and Office 365 Development. It should sever as a documentation and development platform for every new SharePoint branding project.
